@@ -6,6 +6,12 @@
     <div>
       <ul class="nav navbar-nav">
 <li><a href="index.html"><i class="icon-home icon-white"></i><span class="glyphicon glyphicon-home">  </span>  Home</a></li>
+          {{#vignettes}}
+    {{#vignette}}
+      <li><a href="vignettes/{{filename}}"><i class="icon-home icon-white"></i>{{title}}</a></li>
+    {{/vignette}}
+    {{/vignettes}}
+
 
       </ul>
     </div>
